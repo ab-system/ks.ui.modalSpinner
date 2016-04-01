@@ -1,0 +1,52 @@
+.modal_back {
+    background-color: #f8f8ff;
+    /*filter: alpha(opacity=50);*/
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    margin: auto auto;
+}
+/*http://tobiasahlin.com/spinkit/*/
+.sk-wave {
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    text-align: center;
+    position: absolute;
+}
+
+.sk-wave > div {
+    background-color: #727399;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    opacity: 1;
+
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}
